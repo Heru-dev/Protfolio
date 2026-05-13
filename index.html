@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heru Roy — Frontend Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Back to Top -->
+<a href="#hero" class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">HR<span style="color:var(--accent3);">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-1">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why">Why Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:heru.dev.roy@gmail.com" class="btn-primary-custom ms-3 d-none d-lg-inline-block" style="padding:10px 20px;font-size:.82rem;">Hire Me</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Text -->
+      <div class="col-lg-6">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for Projects
+        </div>
+        <h2> Hello, I'm</h2>
+        <h1 class="hero-title">
+         
+          <span class="name">H ROY</span>
+        </h1>
+        <p class="hero-role">
+          <span class="typed-text" id="typedText">Frontend Developer</span>
+        </p>
+        <p class="hero-desc">
+          Passionate about building modern, responsive, and high-performance websites that help businesses grow online. Specializing in React JS, WordPress, and interactive UI design.
+        </p>
+        <div class="hero-actions d-flex gap-3 flex-wrap">
+          <a href="#services" class="btn-primary-custom">View Services</a>
+          <a href="#contact" class="btn-outline-custom">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" data-target="50">0</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="30">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="3">0</div>
+            <div class="stat-label">Years Exp.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Avatar -->
+      <div class="col-lg-6">
+        <div class="hero-avatar-wrap">
+          <div class="avatar-glow"></div>
+          <div class="avatar-inner">
+            <div class="avatar-placeholder">
+              
+              
+              <img src="image/Hiru.png" alt="">
+            </div>
+          </div>
+          <div class="avatar-badge badge-wp">⚡ WordPress Expert</div>
+          <div class="avatar-badge badge-react">⚛ React JS Dev</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TAGLINE MARQUEE ── -->
+<div class="tagline-strip">
+  <div class="tagline-track" id="marqueeTrack">
+    <span class="tagline-item"><span class="tagline-dot"></span> Building Modern Websites for Modern Businesses</span>
+    <span class="tagline-item"><span class="tagline-dot"></span> Crafting Clean UI with Powerful Functionality</span>
+    <span class="tagline-item"><span class="tagline-dot"></span> Turning Ideas Into Interactive Digital Experiences</span>
+    <span class="tagline-item"><span class="tagline-dot"></span> Modern Design • Smooth Animation • Strong Performance</span>
+    <span class="tagline-item"><span class="tagline-dot"></span> Building Modern Websites for Modern Businesses</span>
+    <span class="tagline-item"><span class="tagline-dot"></span> Crafting Clean UI with Powerful Functionality</span>
+    <span class="tagline-item"><span class="tagline-dot"></span> Turning Ideas Into Interactive Digital Experiences</span>
+    <span class="tagline-item"><span class="tagline-dot"></span> Modern Design • Smooth Animation • Strong Performance</span>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal-left">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Crafting Digital<br><span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Experiences</span></h2>
+        <p class="section-subtitle mb-4">
+          I am a passionate Frontend Web Developer specializing in modern, responsive, and high-performance websites. My focus is on creating clean, modern UI designs with smooth animations and excellent user experience.
+        </p>
+        <p style="color:var(--muted);font-size:.9rem;line-height:1.8;margin-bottom:28px;">
+          Along with development, I also provide digital marketing solutions to improve brand identity, online presence, and customer engagement. I deliver websites that are fast, scalable, SEO-friendly, and business-oriented.
+        </p>
+        <a href="mailto:heru.dev.roy@gmail.com" class="btn-primary-custom">Download CV</a>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <div class="about-card">
+          <div class="about-detail">
+            <i class="fas fa-user"></i>
+            <span>Name</span>
+            <strong>HERU ROY</strong>
+          </div>
+          <div class="about-detail">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Education</span>
+            <strong>B.Sc(Hons.) at Begum Rokeya University</strong>
+          </div>
+          <div class="about-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Location</span>
+            <strong>Rangpur Sadar, Rangpur, Bangladesh</strong>
+          </div>
+          <div class="about-detail">
+            <i class="fas fa-briefcase"></i>
+            <span>Profession</span>
+            <strong>Frontend Developer & WordPress Expert</strong>
+          </div>
+          <div class="about-detail">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+            <strong>heru.dev.roy@gmail.com</strong>
+          </div>
+          <div class="about-detail">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+            <strong>+8801868911786</strong>
+          </div>
+          <div class="about-detail" style="padding-top:20px;border-bottom:none;">
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="skill-tag">React JS</span>
+              <span class="skill-tag">WordPress</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">SEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-label justify-content-center">Technical Skills</div>
+      <h2 class="section-title">My <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Expertise</span></h2>
+      <p class="section-subtitle mx-auto">A curated set of technologies I use to build modern, fast, and impactful digital products.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal delay-1">
+        <div class="skill-category">
+          <div class="skill-cat-title">
+            <div class="skill-cat-icon icon-blue"><i class="fas fa-code"></i></div>
+            Frontend Development
+          </div>
+          <div>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript ES6+</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">React JS</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">UI Animation</span>
+            <span class="skill-tag">Figma to HTML</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal delay-2">
+        <div class="skill-category">
+          <div class="skill-cat-title">
+            <div class="skill-cat-icon icon-purple"><i class="fab fa-wordpress"></i></div>
+            WordPress Development
+          </div>
+          <div>
+            <span class="skill-tag">Custom WP Development</span>
+            <span class="skill-tag">Elementor</span>
+            <span class="skill-tag">Theme Customization</span>
+            <span class="skill-tag">Landing Pages</span>
+            <span class="skill-tag">Website Redesign</span>
+            <span class="skill-tag">Speed Optimization</span>
+            <span class="skill-tag">WooCommerce</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal delay-3">
+        <div class="skill-category">
+          <div class="skill-cat-title">
+            <div class="skill-cat-icon icon-pink"><i class="fas fa-chart-line"></i></div>
+            Digital Marketing
+          </div>
+          <div>
+            <span class="skill-tag">SEO Optimization</span>
+            <span class="skill-tag">Social Media Marketing</span>
+            <span class="skill-tag">Brand Identity</span>
+            <span class="skill-tag">Online Promotion</span>
+            <span class="skill-tag">Content Planning</span>
+            <span class="skill-tag">Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-label justify-content-center">What I Offer </div>
+      <h2 class="section-title">My <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Services</span></h2>
+      <p class="section-subtitle mx-auto">End-to-end web development and digital solutions tailored for your business growth.</p>
+    </div>
+    <div class="row g-4">
+      <!-- WordPress -->
+      <div class="col-md-6 col-lg-3 reveal delay-1">
+        <div class="service-card">
+          <div class="service-icon icon-blue"><i class="fab fa-wordpress"></i></div>
+          <div class="service-title">WordPress Services</div>
+          <p class="service-desc">Custom WordPress websites built for speed, style, and scalability.</p>
+          <ul class="service-list">
+            <li>Custom WP Development</li>
+            <li>Business Website Creation</li>
+            <li>Elementor Design</li>
+            <li>Theme Customization</li>
+            <li>Maintenance & Support</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Advanced -->
+      <div class="col-md-6 col-lg-3 reveal delay-2">
+        <div class="service-card">
+          <div class="service-icon icon-purple"><i class="fas fa-layer-group"></i></div>
+          <div class="service-title">Advanced Web Solutions</div>
+          <p class="service-desc">Complex web systems built to handle real business demands.</p>
+          <ul class="service-list">
+            <li>E-Commerce Development</li>
+            <li>Booking System Websites</li>
+            <li>Real Estate Design</li>
+            <li>Portfolio Websites</li>
+            <li>SEO-Friendly Setup</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Frontend -->
+      <div class="col-md-6 col-lg-3 reveal delay-3">
+        <div class="service-card">
+          <div class="service-icon icon-pink"><i class="fas fa-laptop-code"></i></div>
+          <div class="service-title">Frontend Development</div>
+          <p class="service-desc">React applications and modern UI with smooth micro-interactions.</p>
+          <ul class="service-list">
+            <li>React JS Applications</li>
+            <li>Modern UI/UX Design</li>
+            <li>Figma to HTML</li>
+            <li>Website Cloning</li>
+            <li>Interactive Animations</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Digital Marketing -->
+      <div class="col-md-6 col-lg-3 reveal delay-4">
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(251,191,36,.1);color:#fbbf24;"><i class="fas fa-bullhorn"></i></div>
+          <div class="service-title">Digital Marketing</div>
+          <p class="service-desc">Grow your online presence and reach the right audience effectively.</p>
+          <ul class="service-list">
+            <li>SEO Optimization</li>
+            <li>Social Media Marketing</li>
+            <li>Business Branding</li>
+            <li>Online Visibility</li>
+            <li>Content Marketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY WORK WITH ME ── -->
+<section id="why">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-4 reveal-left">
+        <div class="section-label">Why Choose Me</div>
+       
+        <h2 class="section-title">H ROY<br><span style="background:linear-gradient(135deg,var(--accent),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Advantage</span></h2>
+        <p class="section-subtitle">I bring more than just code — I bring strategy, aesthetics, and a commitment to your business success.</p>
+      </div>
+      <div class="col-lg-8">
+        <div class="row g-3">
+          <div class="col-md-6 reveal delay-1">
+            <div class="why-item">
+              <div class="why-icon"><i class="fas fa-paint-brush"></i></div>
+              <div class="why-text">
+                <h5>Modern Premium Design</h5>
+                <p>Elegant, gradient-powered UI that stands out from competitors.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal delay-2">
+            <div class="why-item">
+              <div class="why-icon"><i class="fas fa-magic"></i></div>
+              <div class="why-text">
+                <h5>Smooth Animations</h5>
+                <p>Interactive hover effects and micro-interactions that delight users.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal delay-1">
+            <div class="why-item">
+              <div class="why-icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="why-text">
+                <h5>Mobile-First Design</h5>
+                <p>Fully responsive across all devices — phones, tablets, desktops.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal delay-2">
+            <div class="why-item">
+              <div class="why-icon"><i class="fas fa-rocket"></i></div>
+              <div class="why-text">
+                <h5>Fast Performance</h5>
+                <p>Optimized code and assets for lightning-fast loading speeds.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal delay-1">
+            <div class="why-item">
+              <div class="why-icon"><i class="fas fa-search"></i></div>
+              <div class="why-text">
+                <h5>SEO-Friendly</h5>
+                <p>Built with SEO best practices to help rank higher on Google.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal delay-2">
+            <div class="why-item">
+              <div class="why-icon"><i class="fas fa-headset"></i></div>
+              <div class="why-text">
+                <h5>Strong Support</h5>
+                <p>Clear communication and client-focused solutions always delivered.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="text-center mb-5 reveal">
+      <div class="section-label justify-content-center">Get In Touch</div>
+      <h2 class="section-title">Let's <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Work Together</span></h2>
+      <p class="section-subtitle mx-auto">Have a project in mind? Let's discuss how I can help bring your vision to life.</p>
+    </div>
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-lg-5 reveal-left">
+        <div class="contact-card h-100">
+          <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:20px;">Contact Details</h4>
+          <a href="tel:+8801868911786" class="contact-item text-decoration-none" style="color:inherit;">
+            <div class="contact-item-icon" style="background:rgba(56,189,248,.1);color:var(--accent);"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-item-text">
+              <strong>WhatsApp / Telegram</strong>
+              <span>+8801868911786</span>
+            </div>
+          </a>
+          <a href="mailto:heru.dev.roy@gmail.com" class="contact-item text-decoration-none" style="color:inherit;">
+            <div class="contact-item-icon" style="background:rgba(244,114,182,.1);color:var(--accent3);"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <span>heru.dev.roy@gmail.com</span>
+            </div>
+          </a>
+          <a href="#" class="contact-item text-decoration-none" style="color:inherit;">
+            <div class="contact-item-icon" style="background:rgba(129,140,248,.1);color:var(--accent2);"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text">
+              <strong>Location</strong>
+              <span>Rangpur Sadar, Rangpur, Bangladesh</span>
+            </div>
+          </a>
+
+          <div class="social-grid">
+            <a href="https://www.facebook.com/omuk-ali" class="social-btn" target="_blank">
+              <i class="fab fa-facebook" style="color:#1877f2;"></i> Facebook
+            </a>
+            <a href="https://www.linkedin.com/omuk-ali" class="social-btn" target="_blank">
+              <i class="fab fa-linkedin" style="color:#0a66c2;"></i> LinkedIn
+            </a>
+            <a href="https://www.github.com/omuk-ali" class="social-btn" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.youtube.com/omuk-ali" class="social-btn" target="_blank">
+              <i class="fab fa-youtube" style="color:#ff0000;"></i> YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Form -->
+      <div class="col-lg-7 reveal-right">
+        <div class="contact-card h-100">
+          <h4 style="font-size:1.15rem;font-weight:700;margin-bottom:20px;">Send a Message</h4>
+          <div id="formSuccess" style="display:none;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.3);border-radius:10px;padding:16px;margin-bottom:16px;color:var(--accent);font-size:.9rem;">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-ctrl" id="fname" placeholder="Your Name" />
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-ctrl" id="femail" placeholder="Your Email" />
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-ctrl" id="fsubject" placeholder="Subject" />
+            </div>
+            <div class="col-12">
+              <textarea class="form-ctrl" id="fmessage" placeholder="Your Message..."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn-primary-custom w-100" style="text-align:center;" onclick="handleForm()">
+                <i class="fas fa-paper-plane me-2"></i> Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── */-->
+<footer>
+  <div class="container">
+    <p>© 2026 <span>H Roy</span> — Frontend Developer & WordPress Expert | Designed & Built with ❤️</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
