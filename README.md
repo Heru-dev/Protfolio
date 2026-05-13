@@ -2,7 +2,9 @@
 
 A modern and responsive personal portfolio website built for showcasing professional skills, services, projects, and contact information. Designed with a futuristic dark UI, smooth animations, and clean layouts to create a strong online presence for developers, freelancers, and digital professionals.
 
-![Portfolio Preview](./preview.png)
+ 
+
+
 
 ---
 
