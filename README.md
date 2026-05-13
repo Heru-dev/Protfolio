@@ -2,7 +2,16 @@
 
 A modern and responsive personal portfolio website built for showcasing professional skills, services, projects, and contact information. Designed with a futuristic dark UI, smooth animations, and clean layouts to create a strong online presence for developers, freelancers, and digital professionals.
 
- 
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,5 +68,5 @@ A modern and responsive personal portfolio website built for showcasing professi
 
 ## 📸 Preview
 
-```bash
-Modern Portfolio Website with Neon UI Design
+ <img width="1920" height="5712" alt="image" src="https://github.com/user-attachments/assets/28ade312-ce02-45ef-94e0-f58afc42ad0d" />
+
